@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\IntegralController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,5 @@ use App\Http\Controllers\HomeController;
 });
  */
 Route::get('/', HomeController::class)->name('index');
+
+/* Route::get('/hojaderuta', [IntegralController::class, 'index'])->name('hoja_de_ruta'); */
