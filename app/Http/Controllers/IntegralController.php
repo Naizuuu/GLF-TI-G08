@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class IntegralController extends Controller
 {
-    /* function index()
+    function index()
     {
         return view('integral.home');
-    } */
+    }
 /*     function automata_afd()
     {
         return view('automatas.proceso.automata_afd');

@@ -21,4 +21,4 @@ use App\Http\Controllers\IntegralController;
  */
 Route::get('/', HomeController::class)->name('index');
 
-/* Route::get('/hojaderuta', [IntegralController::class, 'index'])->name('hoja_de_ruta'); */
+Route::get('/hojaderuta', [IntegralController::class, 'index'])->name('hoja_de_ruta');
