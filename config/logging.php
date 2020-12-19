@@ -1,5 +1,6 @@
 <?php
 
+use App\Logging\CustomizeFormatter;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -37,8 +38,8 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
-            'ignore_exceptions' => false,
+            'name' => 'channel-name',
+            'channels' => ['single', 'slack'],
         ],
 
         'single' => [
@@ -98,6 +99,12 @@ return [
 
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
+        ],
+        'trabajointegral' => [
+            'driver'=> 'single',
+            'tap' => [CustomizeFormatter::class],
+            'path' => storage_path('logs/trabajointegral.log'),
+            'level' => 'debug',
         ],
     ],
 

@@ -1,18 +1,3 @@
-{{-- @extends('layouts.plantilla')
-
-@section('title', 'Trabajo Integral - Grafos y Lenguajes Formales')
-
-@section('content')
-
-    <h1 class="text-center display-1">Trabajo Integral</h1>
-    <p class="text-center lead">Grafos y Lenguajes Formales</p>
-
-    <a style="margin-top: 2%; width: 35%;" type="button" class="btn btn-lg btn-block custom-btn" href="{{route('hoja_de_ruta')}}">
-        ENTRAR
-    </a>
-
-@endsection --}}
-
 @extends('layouts.plantilla')
 
 @section('title', 'Trabajo Integral - Grafos y Lenguajes Formales')

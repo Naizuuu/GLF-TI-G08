@@ -3,6 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IntegralController;
+use Illuminate\Support\Facades\Log;
+
+/* 
+Log::emergency($message);
+Log::alert($message);
+Log::critical($message);
+Log::error($message);
+Log::warning($message);
+Log::notice($message);
+Log::info($message);
+Log::debug($message);
+*/
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +28,6 @@ use App\Http\Controllers\IntegralController;
 |
 */
 
-/* Route::get('/', function () {
-    return view('welcome');
-});
- */
 Route::get('/', HomeController::class)->name('index');
 
 Route::get('/hojaderuta', [IntegralController::class, 'index'])->name('hoja_de_ruta');
