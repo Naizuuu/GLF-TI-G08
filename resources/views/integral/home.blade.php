@@ -5,7 +5,7 @@
     $valores = [];
 
     for ($i = 0; $i < (int)$sizeArray; $i++) {
-        $valores[$i] = $_COOKIE['valorN' . $i] . ';';
+        $valores[$i] = $_COOKIE['valorN' . $i];
     }
 
     if(isset($sizeArray)) {
