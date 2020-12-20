@@ -30,7 +30,7 @@
 
 <div class="container">
     <h1 class="text-center display-1">Hoja de Ruta</h1>
-    <form id="form" method="GET" autocomplete="off" style="margin-bottom: 3%;" action="{{route('hoja_de_ruta_proceso')}}">
+    <form id="form" method="GET" autocomplete="off" style="margin-top: 4%;" action="{{route('hoja_de_ruta_proceso')}}">
         @for($i = 0; $i < $grafo->cantidadDeCentros; $i++)
         <div class="row" style="margin-top: 0%;">
             <div class="col-sm">

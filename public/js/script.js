@@ -23,6 +23,7 @@ $(document).ready(function(){
 
 /* LEER ARHCIVO INGRESADO Y ACTUALIZAR EL TEXTAREA AUTOMATICAMENTE */
 
+
 const input = document.getElementById('file_parametros');
 const editor = document.getElementById('contenido_parametros');
 input.addEventListener('change', function () {
@@ -41,11 +42,31 @@ function readFile(file) {
 }
 
 /* Tomar valores del archivo de texto y pasarlo a cookies que duran 10 segundos */
-function obtenerValores(contents) {
+/* function obtenerValores(contents) {
     let valores = contents.split(/\s*\s/);
     crearCookie("sizeArray", valores.length.toString());
     for(let i = 0; i < valores.length; i++) {
         crearCookie("valorN" + i, valores[i].toString());
+    }
+} */
+
+function obtenerValores(contents) {
+    let valores = contents.split(/\s*\s/);
+    var expRegular = /^((P|C){1});([0-9]){1,2};((-?[0-9]){1,5}),((-?[0-9]){1,5})$/;
+    var verificador = true;
+    crearCookie("sizeArray", valores.length.toString());
+    for(let i = 0; i < valores.length; i++) {
+        if(expRegular.test(valores[i])) {
+            crearCookie("valorN" + i, valores[i].toString());
+            console.log(expRegular.test(valores[i]));
+        } else {
+            verificador = false;
+            console.log(expRegular.test(valores[i]));
+        }
+    }
+    if(!verificador) {
+        alert("Su archivo de parámetros está erróneo. Por favor arréglelo antes de continuar.");
+        input.value = "";
     }
 }
 

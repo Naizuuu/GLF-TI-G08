@@ -23,6 +23,9 @@
         <input id="file_parametros" class="" enctype="multipart/form-data" type="file" accept=".txt" style="margin-top: 2%;" required>
     </div>
 
+    {{-- <input type="text" style="display: none;" pattern="^((P|C){1});([0-9]){1,2};((-?[0-9]){1,5}),((-?[0-9]){1,5})$" class="form-control" name="{{$cantEstado}}_identificadores" value="{{$_COOKIE['valorN0']}}" required>
+    <input type="text" style="display: none;" pattern="^((P|C){1});([0-9]){1,2};((-?[0-9]){1,5}),((-?[0-9]){1,5})$" class="form-control" name="{{$cantEstado}}_identificadores" value="{{$_COOKIE['valorN1']}}" required> --}}
+
     <button type="submit" style="margin-bottom: 3%;" class="btn btn-lg btn-block custom-btn" onclick="">Confirmar</button>
 </form>
 
