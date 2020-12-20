@@ -1,6 +1,6 @@
 @php
-    Log::channel('trabajointegral')->notice('Se ingresó correctamente a homepage', [
-            'description' => 'homepage funcionando',
+    Log::channel('integralGeneral')->notice('Se ingresó correctamente a homepage', [
+            'description' => 'view::homepage funcionando',
         ]);
 @endphp
 

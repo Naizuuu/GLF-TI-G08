@@ -8,15 +8,15 @@ class IntegralController extends Controller
 {
     function index()
     {
-        Log::channel('trabajointegral')->info('Mostrando pagina de hoja de ruta', [
-            'description' => 'Entrando a integral.home...',
+        Log::channel('integralGeneral')->info('Mostrando pagina de hoja de ruta', [
+            'description' => 'Entrando a view::integral.home...',
         ]);
         return view('integral.home');
     }
     function proceso()
     {
-        Log::channel('trabajointegral')->info('Mostrando pagina de proceso', [
-            'description' => 'Entrando a integral.proceso...',
+        Log::channel('integralGeneral')->info('Mostrando pagina de proceso', [
+            'description' => 'Entrando a view::integral.proceso...',
         ]);
         return view('integral.proceso');
     }

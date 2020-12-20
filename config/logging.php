@@ -100,11 +100,17 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
-        'trabajointegral' => [
+        'integralGeneral' => [
             'driver'=> 'single',
             'tap' => [CustomizeFormatter::class],
-            'path' => storage_path('logs/trabajointegral.log'),
+            'path' => storage_path('logs/general.log'),
             'level' => 'debug',
+        ],
+        'integralError' => [
+            'driver'=> 'single',
+            'tap' => [CustomizeFormatter::class],
+            'path' => storage_path('logs/errores.log'),
+            'level' => 'error',
         ],
     ],
 

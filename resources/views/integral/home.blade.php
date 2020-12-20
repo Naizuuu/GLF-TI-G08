@@ -1,21 +1,19 @@
 @include('grafos/clase-grafo')
 
 @php
-    use Illuminate\Support\Facades\Log;
-
     if(isset($_COOKIE['sizeArray'])) {
         $sizeArray = $_COOKIE['sizeArray'];
         $valores = [];
         for ($i = 0; $i < (int)$sizeArray; $i++) {
             $valores[$i] = $_COOKIE['valorN' . $i];
         }
-        Log::channel('trabajointegral')->notice('Se recibieron los datos del archivo de texto correctamente', [
+        Log::channel('integralGeneral')->notice('Se recibieron los datos del archivo de texto correctamente', [
             'description' => 'Datos recibidos',
         ]);
 
         $grafo = new Grafo($valores);
     } else {
-        Log::channel('trabajointegral')->danger('No se pudieron recibir los datos del archivo de texto.', [
+        Log::channel('integralGeneral')->danger('No se pudieron recibir los datos del archivo de texto.', [
             'description' => 'Error al recibir los datos',
         ]);
     }

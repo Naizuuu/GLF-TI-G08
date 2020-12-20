@@ -1,7 +1,9 @@
 @include('grafos/clase-grafo')
 
 @php
-
+    Log::channel('integralGeneral')->notice('Se han recibido correctamente los datos de la hoja de ruta', [
+            'description' => 'view::proceso funcionando',
+        ]);
 @endphp
 
 @extends('layouts.plantilla')
