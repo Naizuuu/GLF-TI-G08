@@ -1,3 +1,9 @@
+@php
+    Log::channel('trabajointegral')->notice('Se ingresó correctamente a homepage', [
+            'description' => 'homepage funcionando',
+        ]);
+@endphp
+
 @extends('layouts.plantilla')
 
 @section('title', 'Trabajo Integral - Grafos y Lenguajes Formales')

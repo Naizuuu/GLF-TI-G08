@@ -42,7 +42,7 @@ function readFile(file) {
 
 /* Tomar valores del archivo de texto y pasarlo a cookies que duran 10 segundos */
 function obtenerValores(contents) {
-    let valores = contents.split(/\n/);
+    let valores = contents.split(/\s*\s/);
     crearCookie("sizeArray", valores.length.toString());
     for(let i = 0; i < valores.length; i++) {
         crearCookie("valorN" + i, valores[i].toString());

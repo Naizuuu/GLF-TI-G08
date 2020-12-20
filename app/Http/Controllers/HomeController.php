@@ -9,7 +9,7 @@ class HomeController extends Controller
     public function __invoke()
     {
         Log::channel('trabajointegral')->info('Mostrando pagina de inicio', [
-            'description' => 'homepage funcionando',
+            'description' => 'Entrando a homepage...',
         ]);
         return view('homepage');
     }
