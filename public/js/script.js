@@ -1,6 +1,7 @@
 /* LEER ARHCIVO INGRESADO Y ACTUALIZAR EL TEXTAREA AUTOMATICAMENTE */
 const input = document.getElementById('file_parametros');
 const editor = document.getElementById('contenido_parametros');
+
 input.addEventListener('change', function () {
     if (input.files.length > 0) {
       readFile(input.files[0]);
@@ -36,7 +37,7 @@ function obtenerValores(contents) {
     }
 }
 
-/* ----------------------- EFECTO DEL INICIO --------------------- */
+/* ----------------------- EFECTOS --------------------- */
 
 $(document).ready(function(){
     $('#homepage').delay(1500).fadeOut('slow');

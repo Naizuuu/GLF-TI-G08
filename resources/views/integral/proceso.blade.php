@@ -13,7 +13,7 @@
 @section('content')
 
 
-<div class="container">
+<div class="container" id="proceso_de_ruta">
     <h1 class="text-center display-1">Proceso de Ruta</h1>
 </div>
 
