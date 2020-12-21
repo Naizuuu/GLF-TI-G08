@@ -4,10 +4,6 @@
     --global-color-secondary: #2d6187;
     --global-color-warning: #effad3;
     --global-color-danger: #a8dda8;
-
-    /* https://uigradients.com/#VeniceBlue */
-    /* https://cssgradient.io */
-
 }
 /* Links */
 a,
@@ -30,7 +26,7 @@ a:hover {
     margin-top: 2% !important;
     width: auto !important;
     padding: 7px !important;
-    /* border-radius: 50px !important;  */
+
     display: inline-flex !important;
     background-color: var(--global-color-secondary) !important;
     color: white !important;

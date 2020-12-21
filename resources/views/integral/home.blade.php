@@ -56,9 +56,6 @@
         </div>
     @endfor   
 
-{{-- if(isset($_COOKIE['sizeArray'])) {
-        $sizeArray = $_COOKIE['sizeArray']; --}}
-
     @isset($grafo->cantidadDeCentros)
         <input type="text" style="display: none;" class="form-control" name="sizeArrayParam" value="{{$grafo->cantidadDeCentros}}">
     @endisset

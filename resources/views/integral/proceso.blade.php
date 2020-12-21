@@ -17,7 +17,6 @@
         $camion = explode(";", $key);
         $camionArray[] = $camion;
     }
-    /* var_dump($camionArray[0][1]); */
 @endphp
 
 @extends('layouts.plantilla')
