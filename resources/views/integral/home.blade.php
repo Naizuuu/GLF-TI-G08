@@ -56,6 +56,13 @@
         </div>
     @endfor   
 
+{{-- if(isset($_COOKIE['sizeArray'])) {
+        $sizeArray = $_COOKIE['sizeArray']; --}}
+
+    @isset($grafo->cantidadDeCentros)
+        <input type="text" style="display: none;" class="form-control" name="sizeArrayParam" value="{{$grafo->cantidadDeCentros}}">
+    @endisset
+
     <button type="submit" style="margin-bottom: 3%;" class="btn btn-lg btn-block custom-btn" onclick="">Confirmar</button>
     </form>
 </div>
